@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My First Job helps young people find their first job opportunity.">
-    <title>My First Job</title>
+    <meta name="description" content="My First Job - A simulated platform for young people looking for their first job.">
+    <title>My First Job | Your First Opportunity Starts Here</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="site-header">
-    <a class="logo" href="#home">
+    <a class="logo" href="#home" aria-label="My First Job home">
         <span class="logo-mark">MFJ</span>
         <span>My First Job</span>
     </a>
@@ -18,95 +19,248 @@
     <nav class="nav" id="mainNav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#jobs">Jobs</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#apply">Apply</a>
-        <a href="#contact">Contact</a>
+        <a href="#structure">Structure</a>
+        <a href="#features">Features</a>
+        <a href="#development">Development</a>
+        <a href="#reflection">Reflection</a>
     </nav>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
 </header>
 
 <main>
-    <section class="hero" id="home">
+
+    <!-- 1. HOME - MY WEB PROJECT -->
+    <section class="hero section" id="home">
         <div class="hero-content">
-            <p class="eyebrow">START YOUR PROFESSIONAL JOURNEY</p>
-            <h1>Your first opportunity <span>starts here.</span></h1>
+            <p class="eyebrow">MY WEB DEVELOPMENT PROJECT</p>
+
+            <h1>
+                Your first opportunity
+                <span>starts here.</span>
+            </h1>
+
             <p class="hero-text">
-                My First Job helps students and young people discover entry-level
-                opportunities and take their first step into the professional world.
+                My First Job is a simulated website that helps students and young
+                people discover entry-level job opportunities and take their first
+                step into the professional world.
             </p>
 
             <div class="hero-actions">
-                <a class="btn btn-primary" href="#jobs">Find a Job</a>
-                <a class="btn btn-secondary" href="#about">Learn More</a>
+                <a class="btn btn-primary" href="#features">Find a Job</a>
+                <a class="btn btn-secondary" href="#about">Learn About the Project</a>
             </div>
 
             <div class="hero-stats">
-                <div><strong>20+</strong><span>Job opportunities</span></div>
-                <div><strong>100+</strong><span>Young applicants</span></div>
-                <div><strong>10+</strong><span>Partner companies</span></div>
+                <div>
+                    <strong>20+</strong>
+                    <span>Job opportunities</span>
+                </div>
+                <div>
+                    <strong>100+</strong>
+                    <span>Young applicants</span>
+                </div>
+                <div>
+                    <strong>10+</strong>
+                    <span>Partner companies</span>
+                </div>
             </div>
         </div>
 
-        <div class="hero-card">
+        <div class="hero-visual" aria-label="Job search visual">
             <div class="floating-badge">New opportunity</div>
-            <div class="profile-circle">JD</div>
-            <h3>Junior Web Developer</h3>
-            <p>Remote · Part Time</p>
-            <div class="tags">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="salary-row">
-                <div>
-                    <small>Monthly salary</small>
-                    <strong>$1,600,000</strong>
+
+            <div class="job-preview">
+                <div class="preview-top">
+                    <div class="company-logo large">JD</div>
+                    <span class="job-badge">Remote</span>
                 </div>
-                <a href="#apply" class="mini-btn">Apply</a>
+
+                <h2>Junior Web Developer</h2>
+                <p class="company">CodeLab</p>
+                <p class="location">📍 Remote · Part Time</p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="salary-row">
+                    <div>
+                        <small>Monthly salary</small>
+                        <strong>$1,600,000</strong>
+                    </div>
+                    <a href="#features" class="mini-btn">View Job</a>
+                </div>
+            </div>
+
+            <div class="floating-card">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Application sent</strong>
+                    <small>Successfully submitted</small>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- 2. ABOUT THE PROJECT -->
     <section class="section about" id="about">
         <div class="section-heading">
-            <p class="eyebrow">ABOUT THE PROJECT</p>
-            <h2>Starting your career should feel possible.</h2>
+            <p class="eyebrow">01 · ABOUT THE PROJECT</p>
+            <h2>A simple idea for a real user need.</h2>
+
             <p>
-                We created My First Job for students and young people who want
-                to gain experience, develop their skills and find their first
-                professional opportunity.
+                My First Job is designed for students and young people who are
+                looking for their first work experience. The website provides
+                a simple way to explore opportunities and simulate a job application.
             </p>
         </div>
 
-        <div class="feature-grid">
-            <article class="feature-card">
-                <div class="icon">🔎</div>
-                <h3>Find opportunities</h3>
-                <p>Explore entry-level jobs designed for people starting their careers.</p>
+        <div class="about-grid">
+            <article class="info-card">
+                <span class="card-number">01</span>
+                <h3>The problem</h3>
+                <p>
+                    Many young people do not know where to look for their first
+                    job or how to start an application.
+                </p>
             </article>
-            <article class="feature-card">
-                <div class="icon">📄</div>
-                <h3>Apply easily</h3>
-                <p>Complete a simple application form and send your information.</p>
+
+            <article class="info-card">
+                <span class="card-number">02</span>
+                <h3>The purpose</h3>
+                <p>
+                    The purpose of this website is to make the first job search
+                    simple, clear and accessible.
+                </p>
             </article>
-            <article class="feature-card">
-                <div class="icon">🚀</div>
-                <h3>Start growing</h3>
-                <p>Take your first step and build experience for your future career.</p>
+
+            <article class="info-card">
+                <span class="card-number">03</span>
+                <h3>The users</h3>
+                <p>
+                    The target audience is students and young people with little
+                    or no professional experience.
+                </p>
             </article>
         </div>
     </section>
 
-    <section class="section jobs-section" id="jobs">
+    <!-- 3. WEBSITE STRUCTURE -->
+    <section class="section structure" id="structure">
         <div class="section-heading centered">
-            <p class="eyebrow">JOB OPPORTUNITIES</p>
-            <h2>Find a job that fits your first step.</h2>
-            <p>Explore our simulated entry-level opportunities.</p>
+            <p class="eyebrow">02 · WEBSITE STRUCTURE</p>
+            <h2>Simple navigation, clear information.</h2>
+
+            <p>
+                The menu helps users move between the six required project sections.
+                Each section has a clear purpose.
+            </p>
+        </div>
+
+        <div class="structure-layout">
+            <div class="browser-window">
+                <div class="browser-bar">
+                    <span></span><span></span><span></span>
+                    <div class="browser-address">myfirstjob.local</div>
+                </div>
+
+                <div class="browser-content">
+                    <div class="mini-nav">
+                        <strong>My First Job</strong>
+                        <span>Home</span>
+                        <span>About</span>
+                        <span>Structure</span>
+                        <span>Features</span>
+                        <span>Development</span>
+                        <span>Reflection</span>
+                    </div>
+
+                    <div class="mini-hero">
+                        <div>
+                            <small>WELCOME</small>
+                            <h3>Your first opportunity starts here.</h3>
+                            <p>Find an opportunity. Apply. Start your journey.</p>
+                        </div>
+                        <div class="mini-illustration">💼</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-list">
+                <div class="nav-item">
+                    <span>01</span>
+                    <div>
+                        <strong>Home</strong>
+                        <p>Introduces the project and its visual identity.</p>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <span>02</span>
+                    <div>
+                        <strong>About</strong>
+                        <p>Explains the purpose, problem and target users.</p>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <span>03</span>
+                    <div>
+                        <strong>Structure</strong>
+                        <p>Shows the menu and how users navigate the website.</p>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <span>04</span>
+                    <div>
+                        <strong>Features</strong>
+                        <p>Contains job offers, search, filters and an application form.</p>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <span>05</span>
+                    <div>
+                        <strong>Development</strong>
+                        <p>Explains the tools and steps used to build the project.</p>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <span>06</span>
+                    <div>
+                        <strong>Reflection</strong>
+                        <p>Explains problems, solutions and future improvements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTENT AND FEATURES -->
+    <section class="section features" id="features">
+        <div class="section-heading centered">
+            <p class="eyebrow">03 · CONTENT AND FEATURES</p>
+            <h2>Explore opportunities and apply.</h2>
+            <p>
+                These simulated job listings and the application form demonstrate
+                the main interactive features of My First Job.
+            </p>
         </div>
 
         <div class="filters">
-            <input id="jobSearch" type="search" placeholder="Search jobs..." aria-label="Search jobs">
-            <select id="jobType" aria-label="Filter by job type">
+            <input
+                id="jobSearch"
+                type="search"
+                placeholder="Search jobs..."
+                aria-label="Search jobs"
+            >
+
+            <select id="jobType" aria-label="Filter jobs by type">
                 <option value="all">All job types</option>
                 <option value="part-time">Part Time</option>
                 <option value="full-time">Full Time</option>
@@ -115,18 +269,24 @@
         </div>
 
         <div class="jobs-grid" id="jobsGrid">
+
             <article class="job-card" data-title="Web Assistant" data-type="part-time">
                 <div class="job-top">
                     <span class="company-logo">WA</span>
                     <span class="job-badge">Part Time</span>
                 </div>
+
                 <h3>Web Assistant</h3>
                 <p class="company">Digital Solutions</p>
                 <p class="location">📍 Espinal, Colombia</p>
-                <p class="job-description">Help with basic website content, updates and simple web tasks.</p>
+
+                <p class="job-description">
+                    Help with basic website content, updates and simple web tasks.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,300,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="Web Assistant">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="Web Assistant">Apply →</a>
                 </div>
             </article>
 
@@ -135,13 +295,18 @@
                     <span class="company-logo">CS</span>
                     <span class="job-badge">Full Time</span>
                 </div>
+
                 <h3>Customer Service Assistant</h3>
                 <p class="company">Connect Plus</p>
                 <p class="location">📍 Bogotá, Colombia</p>
-                <p class="job-description">Support customers, answer questions and provide friendly service.</p>
+
+                <p class="job-description">
+                    Support customers, answer questions and provide friendly service.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,450,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="Customer Service Assistant">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="Customer Service Assistant">Apply →</a>
                 </div>
             </article>
 
@@ -150,13 +315,18 @@
                     <span class="company-logo">JD</span>
                     <span class="job-badge">Remote</span>
                 </div>
+
                 <h3>Junior Web Developer</h3>
                 <p class="company">CodeLab</p>
                 <p class="location">📍 Remote</p>
-                <p class="job-description">Create and update simple web pages using HTML, CSS and JavaScript.</p>
+
+                <p class="job-description">
+                    Create and update simple web pages using HTML, CSS and JavaScript.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,600,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="Junior Web Developer">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="Junior Web Developer">Apply →</a>
                 </div>
             </article>
 
@@ -165,13 +335,18 @@
                     <span class="company-logo">IT</span>
                     <span class="job-badge">Part Time</span>
                 </div>
+
                 <h3>IT Support Assistant</h3>
                 <p class="company">Smart Office</p>
                 <p class="location">📍 Ibagué, Colombia</p>
-                <p class="job-description">Assist users with basic computer, software and connectivity problems.</p>
+
+                <p class="job-description">
+                    Assist users with basic computer, software and connectivity problems.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,250,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="IT Support Assistant">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="IT Support Assistant">Apply →</a>
                 </div>
             </article>
 
@@ -180,13 +355,18 @@
                     <span class="company-logo">SM</span>
                     <span class="job-badge">Full Time</span>
                 </div>
+
                 <h3>Social Media Assistant</h3>
                 <p class="company">Creative House</p>
                 <p class="location">📍 Medellín, Colombia</p>
-                <p class="job-description">Create basic social media content and help organize digital campaigns.</p>
+
+                <p class="job-description">
+                    Create basic social media content and help organize digital campaigns.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,400,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="Social Media Assistant">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="Social Media Assistant">Apply →</a>
                 </div>
             </article>
 
@@ -195,123 +375,247 @@
                     <span class="company-logo">DE</span>
                     <span class="job-badge">Remote</span>
                 </div>
+
                 <h3>Data Entry Assistant</h3>
                 <p class="company">DataFlow</p>
                 <p class="location">📍 Remote</p>
-                <p class="job-description">Organize information, update records and maintain accurate digital files.</p>
+
+                <p class="job-description">
+                    Organize information, update records and maintain accurate digital files.
+                </p>
+
                 <div class="job-footer">
                     <strong>$1,350,000 / month</strong>
-                    <a href="#apply" class="text-link" data-job="Data Entry Assistant">Apply →</a>
+                    <a href="#apply-form" class="apply-link" data-job="Data Entry Assistant">Apply →</a>
                 </div>
             </article>
         </div>
 
-        <p class="empty-state" id="emptyState">No jobs found. Try another search.</p>
-    </section>
+        <p class="empty-state" id="emptyState">
+            No jobs found. Try another search.
+        </p>
 
-    <section class="section how-section" id="how-it-works">
-        <div class="section-heading centered">
-            <p class="eyebrow">HOW IT WORKS</p>
-            <h2>Four simple steps to get started.</h2>
+        <div class="application-area" id="apply-form">
+            <div class="application-copy">
+                <p class="eyebrow">SIMULATED APPLICATION</p>
+                <h2>Ready for your first opportunity?</h2>
+
+                <p>
+                    Complete this form to simulate a job application. This is an
+                    educational project, so the information is not sent to a real company.
+                </p>
+
+                <div class="check-list">
+                    <p>✓ Simple application process</p>
+                    <p>✓ Entry-level opportunities</p>
+                    <p>✓ Designed for young people</p>
+                </div>
+            </div>
+
+            <form id="applicationForm" class="application-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" name="fullName" type="text"
+                               placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email"
+                               placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number"
+                               min="16" max="70" placeholder="18" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Job Position</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select a position</option>
+                            <option>Web Assistant</option>
+                            <option>Customer Service Assistant</option>
+                            <option>Junior Web Developer</option>
+                            <option>IT Support Assistant</option>
+                            <option>Social Media Assistant</option>
+                            <option>Data Entry Assistant</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea id="skills" name="skills" rows="4"
+                              placeholder="Example: HTML, CSS, communication..."></textarea>
+                </div>
+
+                <button class="btn btn-primary full-width" type="submit">
+                    Submit Application
+                </button>
+
+                <p class="form-message" id="formMessage" role="status"></p>
+            </form>
         </div>
 
-        <div class="steps">
-            <div class="step">
-                <span>01</span>
-                <h3>Search</h3>
-                <p>Find an opportunity that matches your interests and skills.</p>
+        <div class="contact-strip">
+            <div>
+                <span class="contact-icon">✉</span>
+                <div>
+                    <strong>Contact</strong>
+                    <p>hello@myfirstjob.example</p>
+                </div>
             </div>
-            <div class="step">
-                <span>02</span>
-                <h3>Choose</h3>
-                <p>Read the job details and choose the opportunity you like.</p>
+
+            <div>
+                <span class="contact-icon">📍</span>
+                <div>
+                    <strong>Location</strong>
+                    <p>Colombia</p>
+                </div>
             </div>
-            <div class="step">
-                <span>03</span>
-                <h3>Apply</h3>
-                <p>Complete the application form with your information.</p>
-            </div>
-            <div class="step">
-                <span>04</span>
-                <h3>Start</h3>
-                <p>Take your first step toward your professional future.</p>
+
+            <div>
+                <span class="contact-icon">ℹ</span>
+                <div>
+                    <strong>Project type</strong>
+                    <p>Educational simulation</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section apply-section" id="apply">
-        <div class="apply-copy">
-            <p class="eyebrow">APPLY NOW</p>
-            <h2>Ready for your first opportunity?</h2>
+    <!-- 5. DEVELOPMENT PROCESS -->
+    <section class="section development" id="development">
+        <div class="section-heading">
+            <p class="eyebrow">04 · DEVELOPMENT PROCESS</p>
+            <h2>From an idea to a working website.</h2>
+
             <p>
-                Complete this simulated application form. Your information is
-                only used to demonstrate how the website works.
+                I followed a simple development process to plan, build and test
+                My First Job.
             </p>
-            <div class="check-list">
-                <p>✓ Simple application process</p>
-                <p>✓ Entry-level opportunities</p>
-                <p>✓ Designed for young people</p>
-            </div>
         </div>
 
-        <form id="applicationForm" class="application-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input id="fullName" name="fullName" type="text" placeholder="Your full name" required>
+        <div class="timeline">
+            <article class="timeline-item">
+                <span class="timeline-number">01</span>
+                <div>
+                    <h3>First — I planned</h3>
+                    <p>
+                        I chose the idea, defined the target audience and planned
+                        the six sections of the website.
+                    </p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
-                </div>
-            </div>
+            </article>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="age">Age</label>
-                    <input id="age" name="age" type="number" min="16" max="70" placeholder="18" required>
+            <article class="timeline-item">
+                <span class="timeline-number">02</span>
+                <div>
+                    <h3>Then — I designed</h3>
+                    <p>
+                        I created the layout, navigation menu, colors, cards and
+                        visual identity.
+                    </p>
                 </div>
-                <div class="form-group">
-                    <label for="position">Job Position</label>
-                    <select id="position" name="position" required>
-                        <option value="">Select a position</option>
-                        <option>Web Assistant</option>
-                        <option>Customer Service Assistant</option>
-                        <option>Junior Web Developer</option>
-                        <option>IT Support Assistant</option>
-                        <option>Social Media Assistant</option>
-                        <option>Data Entry Assistant</option>
-                    </select>
+            </article>
+
+            <article class="timeline-item">
+                <span class="timeline-number">03</span>
+                <div>
+                    <h3>After that — I coded</h3>
+                    <p>
+                        I used HTML for the structure, CSS for the design and
+                        JavaScript for the interactive features.
+                    </p>
                 </div>
-            </div>
+            </article>
 
-            <div class="form-group">
-                <label for="skills">Skills</label>
-                <textarea id="skills" name="skills" rows="4" placeholder="Example: HTML, CSS, communication..."></textarea>
-            </div>
+            <article class="timeline-item">
+                <span class="timeline-number">04</span>
+                <div>
+                    <h3>Finally — I tested</h3>
+                    <p>
+                        I tested the menu, buttons, job search, filters and
+                        application form in the browser.
+                    </p>
+                </div>
+            </article>
+        </div>
 
-            <button class="btn btn-primary full-width" type="submit">Submit Application</button>
-            <p class="form-message" id="formMessage" role="status"></p>
-        </form>
+        <div class="tools-box">
+            <p class="eyebrow">TOOLS USED</p>
+
+            <div class="tool-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Visual Studio Code</span>
+                <span>Web Browser</span>
+                <span>GitHub</span>
+            </div>
+        </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-        <div>
-            <p class="eyebrow">CONTACT</p>
-            <h2>Have a question?</h2>
-            <p>Send us a message or follow the project for future updates.</p>
+    <!-- 6. FINAL REFLECTION -->
+    <section class="section reflection" id="reflection">
+        <div class="section-heading centered">
+            <p class="eyebrow">05 · FINAL REFLECTION</p>
+            <h2>What I learned and what I can improve.</h2>
+
+            <p>
+                This project helped me practice web development and explain my
+                technical decisions in simple English.
+            </p>
         </div>
 
-        <div class="contact-card">
-            <p><strong>Email</strong><br>hello@myfirstjob.example</p>
-            <p><strong>Location</strong><br>Colombia</p>
-            <p><strong>Project</strong><br>My First Job · 2026</p>
+        <div class="reflection-grid">
+            <article class="reflection-card problem">
+                <span class="reflection-icon">!</span>
+                <h3>The problem</h3>
+                <p>
+                    I had problems organizing the content and making the
+                    navigation work correctly on different screen sizes.
+                </p>
+            </article>
+
+            <article class="reflection-card solution">
+                <span class="reflection-icon">✓</span>
+                <h3>The solution</h3>
+                <p>
+                    I separated the project into HTML, CSS and JavaScript files,
+                    tested the navigation and added responsive styles.
+                </p>
+            </article>
+
+            <article class="reflection-card future">
+                <span class="reflection-icon">→</span>
+                <h3>Future improvements</h3>
+                <p>
+                    I am going to add real user accounts, a database, more job
+                    opportunities and a real company application system.
+                </p>
+            </article>
+        </div>
+
+        <div class="final-message">
+            <div>
+                <p class="eyebrow">MY FIRST JOB</p>
+                <h2>Every career starts with a first opportunity.</h2>
+            </div>
+
+            <a class="btn btn-primary" href="#home">Back to Home</a>
         </div>
     </section>
+
 </main>
 
 <footer class="footer">
-    <p>© 2026 My First Job. Educational project.</p>
+    <p>© 2026 My First Job · Educational Web Development Project</p>
     <a href="#home">Back to top ↑</a>
 </footer>
 

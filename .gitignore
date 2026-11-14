@@ -1,6 +1,6 @@
-# VS Code
+# Visual Studio Code
 .vscode/
 
-# OS files
+# Operating system files
 .DS_Store
 Thumbs.db

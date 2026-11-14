@@ -42,11 +42,10 @@ function filterJobs() {
 jobSearch.addEventListener('input', filterJobs);
 jobType.addEventListener('change', filterJobs);
 
-document.querySelectorAll('.text-link').forEach(button => {
-    button.addEventListener('click', () => {
-        const selectedJob = button.dataset.job;
-        const positionSelect = document.getElementById('position');
-        positionSelect.value = selectedJob;
+document.querySelectorAll('.apply-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const selectedJob = link.dataset.job;
+        document.getElementById('position').value = selectedJob;
     });
 });
 
